@@ -1,3 +1,4 @@
+
 #ifndef LIMPAR_TELA
 #define LIMPAR_TELA
   #if defined(linux) || defined(LINUX) || defined(Linux) || defined(UNIX)

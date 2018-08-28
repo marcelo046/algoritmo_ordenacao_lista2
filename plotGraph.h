@@ -13,9 +13,6 @@
 // valor maximo dos pontos é 360
 
 void plotGraph(int *points, int n, char *title, int minisec) {
-  int gd = DETECT, gm;
-  initgraph(&gd,&gm,NULL);
-
   int x;
   cleardevice(); // apaga tela do grafico
   outtextxy(LEFT + 250, TOP-20, title);
@@ -25,7 +22,5 @@ void plotGraph(int *points, int n, char *title, int minisec) {
   }
   delay(minisec);
 }
-
-
 
 #endif
