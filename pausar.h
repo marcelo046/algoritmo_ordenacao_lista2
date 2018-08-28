@@ -3,7 +3,7 @@
 
 #include <stdio.h>
 
-void pausar() {s
+void pausar() {
   int i = 0;
   char lixo;
   printf("\nPressione enter para continuar...\n");

@@ -12,7 +12,7 @@
 
 // valor maximo dos pontos é 360
 
-void plotGraph(int *points, int n, char *title) {
+void plotGraph(int *points, int n, char *title, int minisec) {
   int gd = DETECT, gm;
   initgraph(&gd,&gm,NULL);
 
@@ -23,7 +23,7 @@ void plotGraph(int *points, int n, char *title) {
   for (x = 0; x < n; x++) {
     circle(x*DBP+LEFT, BOTTOM-points[x], ROP);
   }
-  closegraph();
+  delay(minisec);
 }
 
 

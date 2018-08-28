@@ -1,5 +1,9 @@
 # algoritmo_ordenacao_lista2
 
+//Alunos: Marcelo Araujo dos Santos                     16/0035481
+//        nome                                       xxxxxxxxxx
+
+
 Para rodar o programa deve-se instalar a biblioteca graphics.h
 
 *//////*   Como instalar a biblioteca graphics.h usando SDL   *//////*

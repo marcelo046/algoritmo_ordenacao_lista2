@@ -1,19 +1,14 @@
 #include <stdio.h>
 #include <graphics.h>
+//#include <X11/Xlib.h>
 
 #include "plotGraph.h"
-
+#include "pausar.h"
+#include "limparTela.h"
 
 int main()
 {
+  /* code */
 
-
-
-   int v[10] = {0,80,30,60,50,360,70,90,80,100};
-   plotGraph(v, 10, "titulo");
-
-
-   delay(5000);
-   
    return 0;
 }
