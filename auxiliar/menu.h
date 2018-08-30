@@ -8,6 +8,7 @@ int menu() {
   printf("= 2) insertion sort   =\n");
   printf("= 3) selection sort   =\n");
   printf("= 4) Comparar os tres =\n");
+  printf("= 5) Configuracoes    =\n");
   printf("= 0) Sair             =\n");
   printf("=======================\n");
   scanf("%d", &opcao);
