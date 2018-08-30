@@ -52,7 +52,7 @@ int main(int argc, char const *argv[])
         getch();
         break;
       case 4: //Comparar os tres
-        compararTempos();
+        compararTempos(points);
         break;
       case 5: //Configuracoes
         configurations(&points, &animDelay);

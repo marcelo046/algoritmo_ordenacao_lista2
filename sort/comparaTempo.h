@@ -13,7 +13,13 @@ void ordena(double *lista, int tamanho) {
   }
 }
 
-void compararTempos(){
+void comyVector(int *v1, int *v2, int size) {
+  int i;
+  for (i = 0; i < size; i++)
+    v1[i] = v2[i];
+}
+
+void compararTempos(int size){
     int *vector_in = 0;
     int *vector_se = 0;
     int *vector_bu = 0;
@@ -21,20 +27,22 @@ void compararTempos(){
     tempo = (double *)malloc(3*sizeof(double));;
     double tempo_in , tempo_se, tempo_bu;
 
-    vector_in = randomVector(vector_in, 99);
-    vector_se = randomVector(vector_se, 99);
-    vector_bu = randomVector(vector_bu, 99);
+    vector_in = randomVector(vector_in, size);
+    vector_se = (int *)malloc(size*sizeof(int));
+    comyVector(vector_se, vector_in, size);
+    vector_bu = (int *)malloc(size*sizeof(int));
+    comyVector(vector_bu, vector_in, size);
 
-    tempo_in = insertionSort(vector_in, 99, 0, 100);
-    tempo_se = selectionSort(vector_se, 99, 0, 100);
-    tempo_bu =  bubbleSort(vector_bu, 99, 0 ,100);
+    tempo_in = insertionSort(vector_in, size, 0, 0);
+    tempo_se = selectionSort(vector_se, size, 0, 0);
+    tempo_bu =  bubbleSort(vector_bu, size, 0 ,0);
 
     tempo[0] = tempo_in;
     tempo[1] = tempo_se;
     tempo[2] = tempo_bu;
 
     ordena(tempo,3);
-
+    printf("Total de pontos: %d\n\n", size);
     for(int i = 0; i < 3; i++){
         if(tempo_in == tempo[i]){
             printf("%dº lugar Insertion Sort com: %lf segundos\n",i + 1, tempo[i]);
