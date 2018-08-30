@@ -1,32 +1,54 @@
 #include <stdio.h>
 #include <graphics.h>
 
-#include "troca.h"
-#include "plotGraph.h"
-#include "pausar.h"
-#include "limparTela.h"
-#include "insertionSort.h"
-#include "printVector.h"
-#include "selectionSort.h"
+#include "includes.h"
+
+// para comilar e executar o codigo
+// gcc main.c -o saida -lgraph && ./saida
 
 int main(int argc, char const *argv[])
 {
-  //XInitThreads();
-  //gtk_init(&argc, &argv);
+  //int gd = DETECT, gm;
+  //initgraph(&gd,&gm,NULL);
+  int opcao;
 
-  int gd = DETECT, gm;
-  initgraph(&gd,&gm,NULL);
-
-  int v[14] = {120,80,40,60,50,100,70,90,30,10, 5, 4, 60, 45};
-  printVector(v, 14);
-  insertionSort(v, 14);
+  do {
+    opcao = menu();
+    switch (opcao) {
+      case 1:
+        //bubble sort
+        printf("\nbubble sort\n");
+        getch();
+        break;
+      case 2:
+        //insertion sort
+        printf("\ninsertion sort\n");
+        getch();
+        break;
+      case 3:
+        //selection sort
+        break;
+      case 4:
+        //Comparar os tres
+        break;
+      case 0:
+        // sair
+        printf("\nTchau\n");
+        break;
+      default:
+        printf("\nopcao invalida!!\n");
+        getch();
+    }
+  } while(opcao);
+  //int v[10] = {120,80,40,60,50,100,70,90,30,10};
+  //printVector(v, 10);
+  //insertionSort(v, 10);
   //plotGraph(v, 10, "titulo", 5000);
   //pausar();
-  getch();
-  closegraph();
+  //getch();
+  //closegraph();
 
   //limparTela();
-
 
    return 0;
 }

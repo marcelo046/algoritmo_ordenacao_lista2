@@ -1,12 +1,13 @@
 # algoritmo_ordenacao_lista2
 
-//Alunos: Marcelo Araujo dos Santos     16/0035481
-//        nome                            xxxxxxxxxx
+Alunos:
+**Marcelo Araujo dos Santos     16/0035481**
+**Nome sobrenome                xx/xxxxxxx**
 
 
 Para rodar o programa deve-se instalar a biblioteca graphics.h
 
-*//////*   Como instalar a biblioteca graphics.h usando SDL   *//////*
+*//////*  Como instalar a biblioteca graphics.h usando SDL  *//////*
 
 Primeiro, deixe baixando um arquivo compactado (link abaixo)
 http://download.savannah.gnu.org/releases/libgraph/libgraph-1.0.2.tar.gz
