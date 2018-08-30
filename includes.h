@@ -11,3 +11,4 @@
 #include "sort/insertionSort.h"
 #include "sort/selectionSort.h"
 #include "sort/bubbleSort.h"
+#include "sort/comparaTempo.h"

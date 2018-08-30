@@ -48,6 +48,7 @@ int main(int argc, char const *argv[])
         getch();
         break;
       case 4: //Comparar os tres
+        compararTempos();
         break;
       //case 5: //Configuracoes
         //break;
