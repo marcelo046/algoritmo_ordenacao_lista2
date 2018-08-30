@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <time.h>
+#include <stdlib.h>
 #include <graphics.h>
 
 int gd = DETECT, gm;
@@ -16,13 +17,14 @@ int main(int argc, char const *argv[])
   //initgraph(&gd,&gm,NULL);
   //plotGraph(&a, 1, "graf", 40);
   //closegraph();
-
+  int v[10] = {20,80,40,60,50,100,70,90,30,10};
   do {
     opcao = menu();
     switch (opcao) {
       case 1:
         //bubble sort
-        printf("\nbubble sort\n");
+        bubbleSort(v, 10, 1);
+        //printf("\nbubble sort\n");
         getch();
         break;
       case 2:
