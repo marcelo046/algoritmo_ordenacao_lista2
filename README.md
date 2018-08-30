@@ -34,8 +34,10 @@ Entre na pasta do arquivo e rode esses comandos pelo terminal
 
 Agora, para rodar o programa, baixe o projeto com o comando
 - git clone https://github.com/marcelo046/algoritmo_ordenacao_lista2
+
 Entre na pasta do projeto com
 - cd algoritmo_ordenacao_lista2
+
 Compile o programa com
 - gcc main.c -o saida -lgraph
 

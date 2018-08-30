@@ -1,6 +1,7 @@
 #include "auxiliar/pausar.h"
 #include "auxiliar/limparTela.h"
 #include "auxiliar/menu.h"
+#include "auxiliar/mostrarPassos.h"
 
 #include "op_vectors/troca.h"
 #include "op_vectors/plotGraph.h"

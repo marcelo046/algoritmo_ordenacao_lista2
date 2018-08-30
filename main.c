@@ -1,16 +1,21 @@
 #include <stdio.h>
+#include <time.h>
 #include <graphics.h>
+
+int gd = DETECT, gm;
 
 #include "includes.h"
 
-// para comilar e executar o codigo
+// para compilar e executar o codigo
 // gcc main.c -o saida -lgraph && ./saida
 
 int main(int argc, char const *argv[])
 {
-  //int gd = DETECT, gm;
-  //initgraph(&gd,&gm,NULL);
   int opcao;
+
+  //initgraph(&gd,&gm,NULL);
+  //plotGraph(&a, 1, "graf", 40);
+  //closegraph();
 
   do {
     opcao = menu();
@@ -31,6 +36,9 @@ int main(int argc, char const *argv[])
       case 4:
         //Comparar os tres
         break;
+      //case 5:
+        //Configuracoes
+        //break;
       case 0:
         // sair
         printf("\nTchau\n");
