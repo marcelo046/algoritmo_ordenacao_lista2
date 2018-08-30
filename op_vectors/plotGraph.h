@@ -3,11 +3,11 @@
 
 
 //#define DIST_TO_RIGHT_SIDE 20
-#define DBP 10 // distance between points
-#define ROP 3 // radius of point (raio do ponto)
+#define DBP 6 // distance between points
+#define ROP 2 // radius of point (raio do ponto)
 #define LEFT 20
 #define TOP 40
-#define RIGHT 600
+#define RIGHT 610
 #define BOTTOM 400
 
 // valor maximo dos pontos é 360

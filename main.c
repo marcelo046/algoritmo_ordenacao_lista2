@@ -12,53 +12,53 @@ int gd = DETECT, gm;
 
 int main(int argc, char const *argv[])
 {
-  int opcao;
+  int option, points = 99, showSteps = 0, animDelay=100;
+  int *vector = NULL;
+  double tempo;
 
-  //initgraph(&gd,&gm,NULL);
-  //plotGraph(&a, 1, "graf", 40);
-  //closegraph();
-  int v[10] = {20,80,40,60,50,100,70,90,30,10};
   do {
-    opcao = menu();
-    switch (opcao) {
-      case 1:
-        //bubble sort
-        bubbleSort(v, 10, 1);
-        //printf("\nbubble sort\n");
+    option = menu();
+    vector = randomVector(vector, points);
+    printf("Vetor desordenado\n");
+    printVector(vector, points);
+
+    switch (option) {
+      case 1: //bubble sort
+        showSteps = mostrarPassos();
+        tempo = bubbleSort(vector, points, showSteps, animDelay);
+        printf("tempo que o bubble sort demorou para ordenar %d valores: %lf\n", points, tempo);
+        printf("\nVetor ordenado\n");
+        printVector(vector, points);
         getch();
         break;
-      case 2:
-        //insertion sort
-        printf("\ninsertion sort\n");
+      case 2: //insertion sort
+        showSteps = mostrarPassos();
+        tempo = insertionSort(vector, points, showSteps, animDelay);
+        printf("tempo que o insertion Sort demorou para ordenar %d valores: %lf\n", points, tempo);
+        printf("\nVetor ordenado\n");
+        printVector(vector, points);
         getch();
         break;
-      case 3:
-        //selection sort
+      case 3: //selection sort
+        showSteps = mostrarPassos();
+        tempo = selectionSort(vector, points, showSteps, animDelay);
+        printf("tempo que o selection Sort demorou para ordenar %d valores: %lf\n", points, tempo);
+        printf("\nVetor ordenado\n");
+        printVector(vector, points);
+        getch();
         break;
-      case 4:
-        //Comparar os tres
+      case 4: //Comparar os tres
         break;
-      //case 5:
-        //Configuracoes
+      //case 5: //Configuracoes
         //break;
-      case 0:
-        // sair
-        printf("\nTchau\n");
+      case 0: // sair
+        printf("\nSaindo...\n");
         break;
       default:
-        printf("\nopcao invalida!!\n");
+        printf("\nOpcao invalida!!\n");
         getch();
     }
-  } while(opcao);
-  //int v[10] = {120,80,40,60,50,100,70,90,30,10};
-  //printVector(v, 10);
-  //insertionSort(v, 10);
-  //plotGraph(v, 10, "titulo", 5000);
-  //pausar();
-  //getch();
-  //closegraph();
-
-  //limparTela();
+  } while(option);
 
    return 0;
 }
