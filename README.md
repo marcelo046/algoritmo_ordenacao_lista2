@@ -2,7 +2,8 @@
 
 Alunos:
 **Marcelo Araujo dos Santos     16/0035481**
-**Nome sobrenome                xx/xxxxxxx**
+
+**Joberth Rogers Tavares Costa  16/0128013**
 
 
 Para rodar o programa deve-se instalar a biblioteca graphics.h

@@ -43,7 +43,7 @@ void compararTempos(){
             printf("%dº lugar Bubble Sort com: %lf segundos\n",i + 1, tempo[i]);
         }
         else if(tempo_se == tempo[i]){
-            printf("%dº lugar Selection Sort com: %lf segundos\n",i, tempo[i]);
+            printf("%dº lugar Selection Sort com: %lf segundos\n",i + 1, tempo[i]);
         }
     }
     getch();

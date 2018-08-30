@@ -4,5 +4,5 @@ void printVector(int *lista, int tamLista) {
   for ( i = 0; i < tamLista; i++) {
     printf("%d, ", lista[i]);
   }
-  printf("]\n");
+  printf("]\n\n\n");
 }

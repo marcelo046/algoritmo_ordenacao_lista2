@@ -4,12 +4,11 @@
 #include <graphics.h>
 
 int gd = DETECT, gm;
-int DBP = 6; // distance between points
 
 #include "includes.h"
 
 // para compilar e executar o codigo
-// gcc main.c -o saida -lgraph && ./saida
+// gcc main.c -o saida.out -lgraph && ./saida.out
 
 int main(int argc, char const *argv[])
 {
@@ -20,31 +19,35 @@ int main(int argc, char const *argv[])
   do {
     option = menu();
     vector = randomVector(vector, points);
-    printf("Vetor desordenado\n");
+    limparTela();
+    printf("Vetor desordenado:\n\n");
     printVector(vector, points);
 
     switch (option) {
       case 1: //bubble sort
         showSteps = mostrarPassos();
         tempo = bubbleSort(vector, points, showSteps, animDelay);
-        printf("tempo que o bubble sort demorou para ordenar %d valores: %lf\n", points, tempo);
-        printf("\nVetor ordenado\n");
+        limparTela();
+        printf("tempo que o que o bubble sort demorou para ordenar %d valores: %lf\n segundos", points, tempo);
+        printf("\n\nVetor ordenado\n");
         printVector(vector, points);
         getch();
         break;
       case 2: //insertion sort
         showSteps = mostrarPassos();
         tempo = insertionSort(vector, points, showSteps, animDelay);
-        printf("tempo que o insertion Sort demorou para ordenar %d valores: %lf\n", points, tempo);
-        printf("\nVetor ordenado\n");
+        limparTela();
+        printf("tempo que o que o insertion Sort demorou para ordenar %d valores: %lf\n segundos", points, tempo);
+        printf("\nVetor ordenado:\n\n");
         printVector(vector, points);
         getch();
         break;
       case 3: //selection sort
         showSteps = mostrarPassos();
         tempo = selectionSort(vector, points, showSteps, animDelay);
-        printf("tempo que o selection Sort demorou para ordenar %d valores: %lf\n", points, tempo);
-        printf("\nVetor ordenado\n");
+        limparTela();
+        printf("tempo que o que o selection Sort demorou para ordenar %d valores: %lf\n segundos", points, tempo);
+        printf("\nVetor ordenado:\n\n");
         printVector(vector, points);
         getch();
         break;
