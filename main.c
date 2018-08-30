@@ -4,6 +4,7 @@
 #include <graphics.h>
 
 int gd = DETECT, gm;
+int DBP = 6; // distance between points
 
 #include "includes.h"
 
@@ -49,8 +50,9 @@ int main(int argc, char const *argv[])
         break;
       case 4: //Comparar os tres
         break;
-      //case 5: //Configuracoes
-        //break;
+      case 5: //Configuracoes
+        configurations(&points, &animDelay);
+        break;
       case 0: // sair
         printf("\nSaindo...\n");
         break;

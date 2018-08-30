@@ -7,6 +7,7 @@
 #include "op_vectors/plotGraph.h"
 #include "op_vectors/printVector.h"
 #include "op_vectors/randomVector.h"
+#include "op_vectors/configurations.h"
 
 #include "sort/insertionSort.h"
 #include "sort/selectionSort.h"
